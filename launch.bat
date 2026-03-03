@@ -28,6 +28,6 @@ echo  [*] Iniciando RacerLab...
 if errorlevel 1 (
     echo.
     echo  [!] Error al ejecutar. Intentando instalar pygame de nuevo...
-    .venv\Scripts\pip install pygame
+    .venv\Scripts\pip install pygame-ce --only-binary :all:
     .venv\Scripts\python.exe lap_timer.py
 )
